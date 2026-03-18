@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Space Grotesk', sans-serif;
+        background-color: #000000;
+    }
+}
+
+@layer components {
+    .text-huge {
+        font-size: clamp(3rem, 8vw, 7rem);
+        line-height: 0.9;
+        letter-spacing: -0.04em;
+    }
+    .text-mega {
+        font-size: clamp(5rem, 20vw, 24rem);
+        line-height: 0.8;
+        letter-spacing: -0.06em;
+        font-weight: 800;
+    }
+    .project-card:hover img {
+        transform: scale(1.05);
+    }
+    .border-subtle {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+}
